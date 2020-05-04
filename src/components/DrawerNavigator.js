@@ -1,6 +1,10 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
+
+
+import { Button } from '@material-ui/core/'
 import Divider from '@material-ui/core/Divider';
 import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
@@ -9,19 +13,16 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 
-import HomeIcon from '@material-ui/icons/Home';
-import PeopleIcon from '@material-ui/icons/People';
-import AccessibilityNewOutlined from '@material-ui/icons/AccessibilityNewOutlined';
-import Commute from '@material-ui/icons/Commute'
+import { Home, ExitToApp, People, Description, AssignmentInd,  } from '@material-ui/icons';
 
 
 const categories = [
   {
     id: 'Funcionalidades',
     children: [
-      { id: 'Cad. de Pessoas', icon: <PeopleIcon />, active: true },
-      { id: 'Cad de Exames', icon: <Commute />, active:false },
-      { id: 'Relatórios', icon: <AccessibilityNewOutlined />, active:false },
+      { id: 'Cad. de Pessoas', icon: <People />, active: true },
+      { id: 'Cad de Exames', icon: <Description />, active: false },
+      { id: 'Relatórios', icon: <AssignmentInd />, active: false },
     ],
   },
 
@@ -78,15 +79,22 @@ const styles = theme => ({
   divider: {
     marginTop: theme.spacing(2),
   },
+  button: {
+    color: ' #fff',
+    marginTop: theme.spacing(2),
+  }
 });
 
 function Navigator(props) {
   const { classes, setacontent, ...other } = props;
+  const history = useHistory();
 
-  function activeFuncionality(nameOf){
+  function activeFuncionality(nameOf) {
     setacontent(nameOf);
     // console.log(setacontent)
   }
+
+  const singOut = () => history.push('/login');
 
   return (
     <Drawer variant="permanent" {...other}>
@@ -98,7 +106,7 @@ function Navigator(props) {
 
         <ListItem className={clsx(classes.item, classes.itemCategory)}>
           <ListItemIcon className={classes.itemIcon}>
-            <HomeIcon />
+            <Home />
           </ListItemIcon>
           <ListItemText
             classes={{
@@ -144,6 +152,15 @@ function Navigator(props) {
           </React.Fragment>
         ))}
       </List>
+      <Button
+        variant="contained"
+        color="primary"
+        className={classes.button}
+        startIcon={<ExitToApp />}
+        onClick={singOut}
+      >
+        Sair
+      </Button>
     </Drawer >
   );
 }

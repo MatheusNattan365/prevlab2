@@ -164,16 +164,16 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="avaDaAmostra">
-                        <option value="Satisfatória."></option>
-                        <option value="Insatisfatória."></option>
-                        <option value="Satisfatória; Ausência de componentes endocervicais / zona de transformação."></option>
+                        <option value="Satisfatória"></option>
+                        <option value="Insatisfatória"></option>
+                        <option value="Satisfatória; Ausência de componentes endocervicais / zona de transformação"></option>
                     </datalist>
 
                     <TextField
                         className={classes.formTextRoot}
                         fullWidth
                         id="cel-no-ept"
-                        label="Células dão Epteliais:"
+                        label="Células dão Epiteliais:"
                         variant="outlined"
                         value={exam.cne}
                         onChange={evt => setExam({ ...exam, cne: evt.target.value })}
@@ -182,14 +182,14 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="celNaoEpiteliais">
-                        <option value="Pouquíssimos polimorfonucleares neutrófilos."></option>
+                        <option value="Pouquíssimos polimorfonucleares neutrófilos"></option>
                         <option value="Poucos polimorfonucleares neutrófilos"></option>
-                        <option value="Poucos polimorfonucleares neutrófilos e histiócitos."></option>
-                        <option value="Moderados polimorfonucleares neutrófilos."></option>
-                        <option value="Moderados polimorfonucleares neutrófilos e histiócitos."></option>
-                        <option value="Muitos polimorfonucleares neutrófilos."></option>
-                        <option value="Muitos polimorfonucleares neutrófilos e histiócitos."></option>
-                        <option value="Frequente polimorfonucleares neutrófilos e histiócitos."></option>
+                        <option value="Poucos polimorfonucleares neutrófilos e histiócitos"></option>
+                        <option value="Moderados polimorfonucleares neutrófilos"></option>
+                        <option value="Moderados polimorfonucleares neutrófilos e histiócitos"></option>
+                        <option value="Muitos polimorfonucleares neutrófilos"></option>
+                        <option value="Muitos polimorfonucleares neutrófilos e histiócitos"></option>
+                        <option value="Frequentes polimorfonucleares neutrófilos e histiócitos"></option>
                     </datalist>
                     <TextField
                         className={classes.formTextRoot}
@@ -204,11 +204,11 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="descDominante">
-                        <option value="Células superficiais e intermediárias."></option>
-                        <option value="Células superficiais, intermediárias e algumas profundas."></option>
-                        <option value="Células superficiais, intermediárias e profundas."></option>
-                        <option value="Células intermediárias."></option>
-                        <option value="Células profundas."></option>
+                        <option value="Células superficiais e intermediárias"></option>
+                        <option value="Células superficiais, intermediárias e algumas profundas"></option>
+                        <option value="Células superficiais, intermediárias e profundas"></option>
+                        <option value="Células intermediárias"></option>
+                        <option value="Células profundas"></option>
                     </datalist>
                     <TextField
                         fullWidth
@@ -223,7 +223,7 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="altCelulares">
-                        <option value="xxxxxxxxxxxxx-xxxxxxxxxxxxx-xxxxxxxxxxxxx"></option>
+                        <option value="xxxxxxxxxxxxx-xxxxxxxxxxxxx"></option>
                     </datalist>
                     <TextField
                         fullWidth
@@ -238,9 +238,9 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="celMetaplasicas">
-                        <option value="Ausentes."></option>
-                        <option value="Metaplasia imatura."></option>
-                        <option value="Metaplasia escamosa em maturação."></option>
+                        <option value="Ausentes"></option>
+                        <option value="Metaplasia imatura"></option>
+                        <option value="Metaplasia escamosa em maturação"></option>
                     </datalist>
                     <TextField
                         fullWidth
@@ -255,11 +255,11 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="celEndocervicais">
-                        <option value="Reativas."></option>
-                        <option value="Ausentes."></option>
-                        <option value="Típicas."></option>
-                        <option value="Atípicas."></option>
-                        <option value="Não visualizadas."></option>
+                        <option value="Reativas"></option>
+                        <option value="Ausentes"></option>
+                        <option value="Típicas"></option>
+                        <option value="Atípicas"></option>
+                        <option value="Não visualizadas"></option>
                     </datalist>
                     <TextField
                         fullWidth
@@ -274,7 +274,7 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="celEndometriais">
-                        <option value="Ausentes."></option>
+                        <option value="Ausentes"></option>
                     </datalist>
 
                     <TextField
@@ -290,15 +290,15 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="floVaginal">
-                        <option value="Lactobacilos."></option>
-                        <option value="Bacilos."></option>
-                        <option value="Cocos."></option>
-                        <option value="Lactobacilos e bacilos."></option>
-                        <option value="Lactobacilos e cocos."></option>
-                        <option value="Cocos e bacilos."></option>
-                        <option value="Fungo moforlogicamente consistentes com cândida sp."></option>
-                        <option value="Organismos semelhantes a Trichomonas Vaginalis."></option>
-                        <option value="Bacilos supracitoplasmáticos sugestivos de Gardnerella vaginalis."></option>
+                        <option value="Lactobacilos"></option>
+                        <option value="Bacilos"></option>
+                        <option value="Cocos"></option>
+                        <option value="Lactobacilos e bacilos"></option>
+                        <option value="Lactobacilos e cocos"></option>
+                        <option value="Cocos e bacilos"></option>
+                        <option value="Fungos morfologicamente consistentes com Cândida sp"></option>
+                        <option value="Organismos semelhantes a Trichomonas Vaginalis"></option>
+                        <option value="Bacilos supracitoplasmáticos sugestivos de Gardnerella vaginalis"></option>
                     </datalist>
 
                     <TextField
@@ -314,30 +314,31 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="agntEspecificos">
-                        <option value="Não visualizados."></option>
-                        <option value="Efeito citopático pelo HPV."></option>
+                        <option value="Não visualizados"></option>
+                        <option value="Efeito citopático pelo HPV"></option>
                     </datalist>
                     <TextField
                         fullWidth
                         className={classes.formTextRoot}
-                        id="citolise"
+                        id="cit"
                         label="Citólise:"
                         variant="outlined"
                         value={exam.cit}
                         onChange={evt => setExam({ ...exam, cit: evt.target.value })}
                         inputProps={
-                            { list: 'citolese' }
+                            { list: 'citolise' }
                         }
                     />
-                    <datalist id="citolese">
-                        <option value="Citólise leve."></option>
-                        <option value="Citólise moderada."></option>
-                        <option value="Citólise intensa."></option>
+                    <datalist id="citolise">
+                        <option value="Citólise leve"></option>
+                        <option value="Citólise moderada"></option>
+                        <option value="Citólise intensa"></option>
                     </datalist>
+                    
                     <TextField
                         fullWidth
                         className={classes.formTextRoot}
-                        id="conclusao"
+                        id="conclu"
                         label="Conclusão:"
                         variant="outlined"
                         value={exam.conclusao}
@@ -347,12 +348,13 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="conclusao">
-                        <option value="Negativo para lesão intra-epitelial ou malignidade no material examinado (Bethesda 2014)."></option>
-                        <option value="Atipias de significado indeterminado em células escamosas, possivelmente não neoplásicas."></option>
-                        <option value="Atipias de significado indeterminado em células escamosas, não se pode afastar lesão de alto grau."></option>
-                        <option value="Lesão intra-epitelial de baixo grau."></option>
+                        <option value="Negativo para lesão intra-epitelial ou malignidade no material examinado (Bethesda 2014)"></option>
+                        <option value="Atipias de significado indeterminado em células escamosas, possivelmente não neoplásicas"></option>
+                        <option value="Atipias de significado indeterminado em células escamosas, não se pode afastar lesão de alto grau"></option>
+                        <option value="Lesão intra-epitelial de baixo grau"></option>
                         <option value="Lesão intra-epitelial de alto grau"></option>
                     </datalist>
+
                     <TextField
                         fullWidth
                         className={classes.formTextRoot}
@@ -366,10 +368,10 @@ function ExamContent(props) {
                         }
                     />
                     <datalist id="obs">
-                        <option value="Obs: Sugere-se acompanhamento do processo metaplásico."></option>
-                        <option value="Obs: Sugere-se repetir citologia em seis meses."></option>
-                        <option value="Obs: Sugere-se colposcopia com biópsia para melhor esclarecimento."></option>
-                        <option value="Obs: Esfregaço atrófico."></option>
+                        <option value="Obs: Sugere-se acompanhamento do processo metaplásico"></option>
+                        <option value="Obs: Sugere-se repetir citologia em seis meses"></option>
+                        <option value="Obs: Sugere-se colposcopia com biópsia para melhor esclarecimento"></option>
+                        <option value="Obs: Esfregaço atrófico"></option>
                     </datalist>
                     <div className={classes.btnsForm}>
                         <Button variant="contained" fullWidth color="primary" onClick={() => saveExam()}className={classes.addUser}>
